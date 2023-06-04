@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --Tomato: hsl(4, 100%, 67%);
+    --darkGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --gradActive: linear-gradient(hsl(4, 100%, 67%), hsl(0, 0%, 100%));
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto sans-serif;
+    font-size: 1.1rem;
+    /* overflow-x: hidden; */
+}
+body {
+    background-color: var(--darkGrey);
+    height: 100vh;
+    width: 100vw;
+}
+h1 {
+    color: var(--darkGrey);
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+.flexBetween {
+    @apply flex justify-between items-center;
+}
+
+.f_400 {
+    font-weight: 400;
+}
+.f_700 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+.weight_700 {
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+.weight_400 {
+    font-weight: 400;
+    line-height: 1rem;
+}
+li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+    margin: 5px auto;
+}
+/* li img {
+    width: 10px;
+
+} */
+input::placeholder {
+    padding-left: 10px;
+}
+
+.submitBtn {
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    transition: all ease 2s;
+}
+.loginBtn {
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    transition: all ease 2s;
+}
+.submitBtn:hover,
+.loginBtn:hover {
+    background: linear-gradient(
+        90deg,
+        rgb(240, 120, 120) 0%,
+        hsl(4, 100%, 67%) 50%,
+        rgb(255, 82, 123) 100%
+    );
+}
+
+.emailInput:focus {
+    outline: 1px solid hsl(4, 100%, 67%);
+    color: hsl(4, 100%, 67%);
+}
+.emailInput {
+    color: hsl(4, 100%, 67%);
+}
+label {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--CharcoalGrey);
+}
+
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+    * {
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 1250px) and (max-width: 1499px) {
+    * {
+        font-size: 0.9rem;
+    }
+    .weight_700 {
+        font-weight: 700;
+        line-height: 2.5rem;
+        font-size: 3.5rem;
+    }
+    .weight_400 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .thankContainer {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1249px) {
+    * {
+        font-size: 0.7rem;
+    }
+    .weight_700 {
+        font-weight: 700;
+        line-height: 2.5rem;
+        font-size: 3.5rem;
+    }
+    .weight_400 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .thankContainer {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 999px) {
+    * {
+        font-size: 0.51rem;
+    }
+    .weight_700 {
+        font-weight: 700;
+        line-height: 5rem;
+        font-size: 4.5rem;
+    }
+    .weight_400 {
+        font-size: 3rem !important;
+        font-weight: 400;
+        line-height: 3rem;
+    }
+    .thankContainer {
+        width: 50%;
+        height: 40%;
+        min-height: 30%;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 750px) {
+    * {
+        font-size: 0.3rem;
+    }
+    .weight_700 {
+        font-weight: 700;
+        line-height: 3rem;
+        font-size: 4.5rem;
+    }
+    .weight_400 {
+        font-size: 3rem !important;
+        font-weight: 400;
+        line-height: 3rem;
+    }
+    .thankContainer {
+        width: 50%;
+        height: 40%;
+        min-height: 30%;
+    }
+}
