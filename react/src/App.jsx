@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./Home";
-import ThankYou from "./ThankYou";
+import Home from "./pages/Home";
+import ThankYou from "./pages/ThankYou";
 import { useState } from "react";
 import LogLayOut from "./users/LogLayOut";
-import DashBoard from "./DashBoard";
+import DashBoard from "./pages/DashBoard";
 
 function App() {
     const [appEmail, setappEmail] = useState("");

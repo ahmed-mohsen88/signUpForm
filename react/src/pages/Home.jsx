@@ -1,7 +1,7 @@
-import rightImage from "./assets/images/illustration-sign-up-desktop.svg";
-import rightImageMobile from "./assets/images/illustration-sign-up-mobile.svg";
+import rightImage from "../assets/images/illustration-sign-up-desktop.svg";
+import rightImageMobile from "../assets/images/illustration-sign-up-mobile.svg";
 import { PropTypes } from "prop-types";
-import listIcon from "./assets/images/icon-list.svg";
+import listIcon from "../assets/images/icon-list.svg";
 import { useMediaQuery } from "react-responsive";
 import axios from "axios";
 import { useState } from "react";
@@ -54,7 +54,6 @@ const Home = ({ setappEmail }) => {
                 <div className="left flex flex-col justify-between gap-10 xs:gap-5 xs:justify-start xs:w-full p-5">
                     {/* top */}
                     <div className="flex justify-between items-start flex-col gap-5 xs:gap-2">
-                        {focus && <p>Admin Login</p>}
                         <button
                             className="loginBtn rounded-full text-white"
                             onMouseEnter={() => setfocus(true)}

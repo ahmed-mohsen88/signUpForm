@@ -1,7 +1,7 @@
 import axios from "axios";
-import DashLayOut from "./DashLayOut";
+import DashLayOut from "../components/DashLayOut";
 import { useEffect, useState } from "react";
-import StackedList from "./StakedList";
+import StackedList from "../components/StakedList";
 
 const DashBoard = () => {
     const [subscriptionData, setsubscriptionData] = useState([]);

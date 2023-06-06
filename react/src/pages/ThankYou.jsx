@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import thank from "./assets/images/icon-success.svg";
+import thank from "../assets/images/icon-success.svg";
 import { PropTypes } from "prop-types";
-import "./thank.css";
 const ThankYou = ({ appEmail }) => {
     ThankYou.propTypes = {
         appEmail: PropTypes.string,
@@ -23,7 +22,7 @@ const ThankYou = ({ appEmail }) => {
                 </h1>
                 <p className="weight_400">
                     A confirmation email has been sent to
-                    <strong>{appEmail}</strong> Please open it and click the
+                    <strong> {appEmail}</strong> Please open it and click the
                     button to confirm the subscription
                 </p>
                 <div className="h-full w-full flex xs:justify-end sm:h-fit">
